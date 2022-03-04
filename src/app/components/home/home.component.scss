@@ -1,0 +1,45 @@
+$color-one: #EAE7DC;
+$color-two: #D8C3A5;
+$color-three: #8E8D8A;
+$color-four: #E98074;
+$color-five: #e85A4F;
+$color-six: #faf8f2;
+
+#route-container{
+    height: 100%;
+    background-color: $color-four;
+    display: flex;
+    flex-direction: column;
+    overflow:auto;
+}
+
+.container{
+    height: 500px;
+    width: 40%;
+    margin-left: 2%;
+    margin-top: 15px;
+    flex-shrink: 0;
+}
+
+
+
+@media screen and (min-width: 600px) {  // MEDIUM SCREENS
+
+    #route-container{
+        flex-direction: row;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1000px) {   // LARGE SCREENS
+
+    #route-container{
+        
+    }
+
+
+
+}
+

@@ -1,0 +1,44 @@
+<div id='container'>
+    <div class="block block-grey">
+        <div class="block-title">
+            <div class="block-title-text">
+                {{ block_a.title_text}}
+            </div>
+        </div>
+        <div class="block-body">
+            <div class="block-body-cards">
+                <div class="block-body-card" *ngFor="let card of block_a.cards">
+                    {{ card.title }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block block-pink">
+        <div class="block-title justify-right">
+            <div class="block-title-text">
+                {{ block_a.title_text}}
+            </div>
+        </div>
+        <div class="block-body">
+            <div class="block-body-cards">
+                <div class="block-body-card" *ngFor="let card of block_a.cards">
+                    {{ card.title }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block block-grey">
+        <div class="block-title">
+            <div class="block-title-text">
+                {{ block_a.title_text}}
+            </div>
+        </div>
+        <div class="block-body">
+            <div class="block-body-cards">
+                <div class="block-body-card" *ngFor="let card of block_a.cards">
+                    {{ card.title }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

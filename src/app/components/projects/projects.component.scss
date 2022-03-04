@@ -1,0 +1,91 @@
+$color-one: #EAE7DC;
+$color-two: #D8C3A5;
+$color-three: #8E8D8A;
+$color-four: #E98074;
+$color-five: #e85A4F;
+$color-six: #faf8f2;
+
+#container{
+    //background-color: aqua;
+    width: 100%;
+    height: 1800px;
+
+    #projects-title{
+        height: 150px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xxx-large;
+    }
+
+    .block{
+        height:600px;
+        width: 100%;
+
+        .block-title{
+            height:100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            .block-title-text{
+                height: 100%;
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: xx-large;
+            }
+        }
+        .justify-right{
+            justify-content: flex-end;
+        }
+        .block-body{
+            height:500px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+
+            
+            .block-body-cards{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                
+
+                .block-body-card{
+                    height: 440px;
+                    width: 450px;
+                    min-width: 450px;
+                    background-color: $color-five;
+                    margin-left: 70px;
+                    margin-right: 70px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: transform 0.5s;
+                    
+                    &:hover{
+                        transform: scale(1.05);
+                    }
+                }
+            }
+            
+        }
+    }
+    .block-pink{
+        background-color: $color-four;
+        .block-title-text{
+            color: $color-six;
+        }
+    }
+    .block-grey{
+        background-color: $color-six;
+        .block-title-text{
+            color: $color-four;
+        }
+    }
+}

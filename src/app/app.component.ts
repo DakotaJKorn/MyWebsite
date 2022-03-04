@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-site';
+
+  navToggled = false;
+
+  navToggle(){
+    console.log('Toggled')
+    this.navToggled = !this.navToggled;
+  }
+
 }

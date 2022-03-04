@@ -1,0 +1,94 @@
+$color-one: #EAE7DC;
+$color-two: #D8C3A5;
+$color-three: #8E8D8A;
+$color-four: #E98074;
+$color-five: #e85A4F;
+$color-six: #faf8f2;
+
+#route-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow:auto;
+}
+
+.container{
+    height: 500px;
+    width: 40%;
+    margin-left: 2%;
+    margin-top: 15px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+}
+
+#container-headshot{
+    background-color: $color-one;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#headshot-image{
+    content: url(../../../assets/images/Dakota-Profile-Pic.jpg);
+    height: 70%;
+    border-radius: 5px;
+}
+
+#container-information{
+    background-color: $color-one;
+    width: 55%;
+    height: 625px;
+    overflow-y: auto;
+}
+
+#container-information-content{
+    margin:10px;
+}
+
+#list-content{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    li{
+        font-size: large;
+    }
+
+    .li-header{
+        text-decoration: underline;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        font-size: x-large;
+        font-weight: bold;
+    
+    }
+
+    .list-content-divider{
+        width: 130px;
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+}
+
+
+
+@media screen and (min-width: 600px) {  // MEDIUM SCREENS
+
+    #route-container{
+        flex-direction: row;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1000px) {   // LARGE SCREENS
+
+    #route-container{
+        
+    }
+
+
+
+}
+
